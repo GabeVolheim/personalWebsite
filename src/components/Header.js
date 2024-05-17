@@ -10,10 +10,10 @@ const Header = () => {
         <h1 className = " ">
         <img src={logo} alt="Logo" className="w-12 h-12"></img>
         </h1>
-        <h1 className="text-2xl font-bold pl-4">Gabe Volheim</h1>
+        <h1 className="text-2xl pl-4">Volheim</h1>
     </div>
     <div className="flex items-center mr-64 gap-4">
-        <h4 className="text-2xl font-bold">Blog</h4>
+        <h4 className="text-2xl">Blog</h4>
         <h4>
             <div>
                 <button
