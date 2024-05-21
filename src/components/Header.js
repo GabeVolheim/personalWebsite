@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUser, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   return (
-    <header className="bg-transparent shadow-md text-white p-4 flex justify-between items-center font-bebas">
+    <header className="bg-slate-800 shadow-md text-white p-4 flex justify-between items-center font-bebas">
     <div className="flex items-center ml-64">
         <h1 className = " ">
         <img src={logo} alt="Logo" className="w-12 h-12"></img>

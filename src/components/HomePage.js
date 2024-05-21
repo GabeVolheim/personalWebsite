@@ -1,12 +1,12 @@
 import {useInView} from 'react-intersection-observer'
 import '../App.css';
-import Header from './Header';
 import AboutMe from './AboutMe'; 
 import Specialties from './Specialties';
 import MainContent from './MainContent';
+import Header from './Header';
 function FadeInSection({ children }) {
     const { ref, inView } = useInView({
-      threshold: 0.35,
+      threshold: 0.4,
       triggerOnce: true 
     });
   
@@ -23,7 +23,6 @@ function FadeInSection({ children }) {
 const HomePage = () => {
     return(
     <div className="bg-slate-800 flex flex-col min-h-screen">
-        <Header />
       <FadeInSection>
         <AboutMe />
       </FadeInSection>
