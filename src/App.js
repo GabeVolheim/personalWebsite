@@ -1,44 +1,22 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Specialties from './components/Specialties'
-import Footer from './components/Footer';
-import MainContent from './components/MainContent';
-import AboutMe from './components/AboutMe';
-import {useInView} from 'react-intersection-observer'
-function FadeInSection({ children }) {
-  const { ref, inView } = useInView({
-    threshold: 0.35,
-    triggerOnce: true 
-  });
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import wip from './components/wipPage';
+import HomePage from './components/HomePage';
 
-  return (
-    <div
-      ref={ref}
-      className={`fade-in-section ${inView ? 'is-visible' : ''}`}
-    >
-      {children}
-    </div>
-  );
-}
+
 
   
 const App = () => {
   return (
-    <div className="bg-slate-800 flex flex-col min-h-screen">
-      <Header />
-      <FadeInSection>
-        <AboutMe />
-      </FadeInSection>
-      <FadeInSection>
-        <Specialties/>
-      </FadeInSection>
-      <FadeInSection>
-        <AboutMe />
-      </FadeInSection>
+    <Router>
       {/* <Footer /> */}
-    </div>
+      <Routes>
+        <Route path="/" element = {HomePage}/>
+        <Route path="/blog" element={wip}/>
+      </Routes>
+    </Router>
   );
 };
 

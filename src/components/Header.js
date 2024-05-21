@@ -13,7 +13,7 @@ const Header = () => {
         <h1 className="text-2xl pl-4">Volheim</h1>
     </div>
     <div className="flex items-center mr-64 gap-4">
-        <h4 className="text-2xl">Blog</h4>
+        <a className="text-2xl" href = "/blog">Blog</a>
         <h4>
             <div>
                 <button

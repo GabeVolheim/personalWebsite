@@ -11,7 +11,7 @@ const AboutMe = () => {
                 Hey, call me Gabe! I am a passionate computer programmer with a dream to do the impossible. I graduated from Little Ole Clemson with a degree in computer science, and since then, I've been immersed in the world of technology and coding. 
             </div>
         </div>
-        <img src={mugshot} alt="A photo of me!" className="w-1/5 md:w-3/5 h-auto mr-64 rounded-lg border-4 border-white shadow-9xl transform transition duration-500 hover:scale-105 hover:shadow-lg"></img>
+        <img src={mugshot} alt="A photo of me!" className="w-3/5 md:w-3/5 lg:w-1/5 h-auto mr-64 rounded-lg border-4 border-white shadow-9xl transform transition duration-500 hover:scale-105 hover:shadow-lg"></img>
     </div>
     );
 }
