@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from '../img/logo.jpg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   return (
     <header className="bg-slate-800 shadow-md text-white p-4 flex justify-between items-center font-bebas">
@@ -13,7 +13,7 @@ const Header = () => {
         <h1 className="text-2xl pl-4">Volheim</h1>
     </div>
     <div className="flex items-center mr-64 gap-4">
-        <a className="text-2xl" href = "/blog">Blog</a>
+        <a className="text-2xl" href = "/wip">Blog</a>
         <h4>
             <div>
                 <button
